@@ -1,0 +1,14 @@
+/* Print helpers */
+.no-print { display: block; }
+@media print {
+  .no-print { display: none !important; }
+  .resume-shell { box-shadow: none !important; margin: 0; }
+}
+
+/* Resume serif */
+.resume-serif { font-family: Georgia, 'Times New Roman', serif; }
+
+/* Small helpers for vibrant inputs (used as classes inline too) */
+.input-vibrant {
+  @apply p-2 border rounded-md bg-white/60 backdrop-blur-sm focus:outline-none transition-all;
+}

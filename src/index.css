@@ -1,0 +1,15 @@
+@import "tailwindcss";
+/* Ensure editor UI is hidden when printing (safer fallback) */
+.no-print { display: block; }
+@media print {
+  .no-print { display: none !important; }
+  .resume-shell { box-shadow: none !important; margin: 0; }
+}
+
+/* Slightly larger preview print-friendly font */
+@media print {
+  .resume-serif { font-size: 12pt; }
+}
+
+/* Vibrant focus rings override if needed */
+:focus { outline: none; }
